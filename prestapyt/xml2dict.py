@@ -34,6 +34,11 @@ def _parse_node(node):
 
     #Save childrens
     has_child = False
+    #
+    # In Python 3.9.0 this line is
+    #
+    # for child in node:
+    #
     for child in node.getchildren():
         has_child = True
         ctag = child.tag
